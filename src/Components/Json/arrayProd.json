@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pizza Muzarella",
+        "precio": 1000,
+        "descripcion": "Pizza pre cocinada con trozos de muzzarella",
+        "imagen": "/public/images/prod/piz/muza.png",
+        "stock": 10,
+        "categoria": "Pizzas"
+    },
+    {
+        "id": 2,
+        "nombre": "Pizza Calabresa",
+        "precio": 1300,
+        "descripcion": "Pizza pre cocinada con rodajas de calabresa",
+        "imagen": "/public/images/prod/piz/calabresa.png",
+        "stock": 10,
+        "categoria": "Pizzas"
+    },
+    {
+        "id": 3,
+        "nombre": "Pizza Cebolla",
+        "precio": 1000,
+        "descripcion": "Pizza pre cocinada con rodajas de cebolla y picante",
+        "imagen": "/public/images/prod/piz/ceblla.png",
+        "stock": 10,
+        "categoria": "Pizzas"
+    },
+    {
+        "id": 4,
+        "nombre": "Pizza Jamón",
+        "precio": 1200,
+        "descripcion": "Pizza pre cocinada con fetas de jamón",
+        "imagen": "/public/images/prod/piz/jamon.png",
+        "stock": 10,
+        "categoria": "Pizzas"
+    },
+    {
+        "id": 5,
+        "nombre": "Pizza Napolitana",
+        "precio": 1300,
+        "descripcion": "Pizza pre cocinada con rodajas de tomate y fetas de jamón",
+        "imagen": "/public/images/prod/piz/napo.png",
+        "stock": 10,
+        "categoria": "Pizzas"
+    },
+    {
+        "id": 6,
+        "nombre": "Pizza Roquefort",
+        "precio": 1000,
+        "descripcion": "Pizza pre cocinada con trozos de queso roquefort y queso muzarella",
+        "imagen": "/public/images/prod/piz/roque.png",
+        "stock": 10,
+        "categoria": "Pizzas"
+    },
+    {   "id": 7,
+        "nombre": "Biscochuelo de Vainilla o Naranja",
+        "precio": 2000,
+        "descripcion": "Biscochuelo esponjoso de naranja o vainillia. OPCION: marmolado",
+        "imagen": "/public/images/prod/pos/biscoch.png",
+        "stock": 10,
+        "categoria": "Postres"
+    },
+    {
+        "id": 8,
+        "nombre": "Postre Frutilla",
+        "precio": 2000,
+        "descripcion": "Torta de yogur con frutillas cortadas",
+        "imagen": "/public/images/prod/pos/frut.png",
+        "stock": 10,
+        "categoria": "Postres"
+    },
+    {
+        "id": 9,
+        "nombre": "Arrollado Dulce de Leche",
+        "precio": 2200,
+        "descripcion": "Arollado de merengues y dulce de leche con cobertura de chocolate, crema y frutillas cortadas",
+        "imagen": "/public/images/prod/pos/choc.png",
+        "stock": 10,
+        "categoria": "Postres"
+    }
+    
+]
