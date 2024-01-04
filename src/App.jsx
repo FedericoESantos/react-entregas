@@ -10,6 +10,7 @@ import CartProvider from "./Components/Context/CartContext.jsx";
 import Error from './Components/Error';
 import { CheckOut } from "../src/Components/CheckOut/CheckOut.jsx";
 import Cart from './Components/Cart/Cart';
+import Contacto from './Components/Contacto/Contacto.jsx';
 
 
 function App() {
@@ -23,11 +24,12 @@ function App() {
           <FondoHome />
           <Routes>
             <Route path={"/"} element={<ItemListContainer />} />
-            <Route path={"/category/:category"} element={<ItemListContainer />} />
+            <Route path={"/category/:id"} element={<ItemListContainer />} />
             <Route path={"/item/:id"} element={<ItemDetailContainer />} />
             <Route path={"/cart"} element={<Cart/>} />
             <Route path={"/checkout"} element={<CheckOut/>} />
             <Route path={'*'} element={ <Error /> } />
+            <Route path={'/contacto'} element={ <Contacto /> } />
           </Routes>
 
         </CartProvider>

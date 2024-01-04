@@ -198,3 +198,20 @@ ul div{
 .hacer-compras p{
   padding: 1.25rem;
 }
+.contacto {
+  background-color: rgba(255, 255, 255, 0.781);
+  border-radius: 1.25rem;
+  margin: 1.25rem;
+  text-align: center;
+}
+.contacto img{
+  padding: 1.25rem;
+  height: 6.25rem;
+}
+.contacto h1{
+  padding: 1.5625rem;
+  color: rgb(255, 208, 0);
+}
+.contacto figure img{
+  height: 11.25rem;
+}
