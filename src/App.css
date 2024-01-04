@@ -179,3 +179,22 @@ ul div{
   display: flex;
   justify-content:space-around;
 }
+.carrito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 217, 0, 0.705);
+}
+.hacer-compras{
+  margin: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.726);
+  padding: 1.25rem;
+  color: rgb(255, 0, 0);
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+.hacer-compras p{
+  padding: 1.25rem;
+}

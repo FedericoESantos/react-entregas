@@ -83,13 +83,14 @@ export const CheckOut = () => {
     };
     return (
         <div>
-            <h2> Complete el formulario para confirmar la compra </h2>
+            <img src="../../../public/images/logo.png" alt="logo" />
+            <h2> Complete el formulario para confirmar su compra... </h2>
             <form onSubmit={manejadorFormulario}>
 
                 {cart.map((prod) => (
                     <div key={prod.id}>
-                        <p>{''} {prod.nombre} {prod.cantidad}</p>
-                        <p>{prod.precio}</p>
+                        <p>{''} {prod.title} {prod.quantity}</p>
+                        <p>{prod.price}</p>
                     </div>
                 ))}
 

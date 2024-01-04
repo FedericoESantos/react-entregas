@@ -16,7 +16,7 @@ const ItemListContainer = ({greeting}) => {
                                       // quiero que me traiga
         // ahora viene la condición
         if(id){ // si existe el id
-            const queryFilter = query(queryColl, where("categroyId", "==", id));
+            const queryFilter = query(queryColl, where("categoryId", "==", id));
             // traeme de ... query collection ... y el where indica que es lo que tenes que filtrar
             getDocs(queryFilter).then((res)=> // con esto le indico que quiero obtener del documento y lo captura con una promesa
             setItem(res.docs.map((p)=>({id: p.id, ...p.data() }))) // lo seteo para que sea vea por pantalla y que de mi res me mapee cada docs

@@ -8,15 +8,15 @@ const Cart = () => {
 
     if (cart.length === 0) { // si la longitud del estado de mi carrito es 0 no hay elementos agregados
         return (
-            <>
+            <div className='hacer-compras'>
                 <p> No hay elementos en el carrito </p>
                 <Link to="/"> Hacer compras </Link>
-            </>
+            </div>
         );
     }
 
     return (
-        <>
+        <div className='carrito'>
             {cart.map((prod) => (
                 <ItemCart key={prod.id} product={prod} />
             ))}
@@ -26,7 +26,7 @@ const Cart = () => {
                 {' '}
                 <button className="total">Finalizar Compra</button>
             </Link>
-        </>
+        </div>
     );
 };
 
