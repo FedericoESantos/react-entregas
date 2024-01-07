@@ -11,6 +11,7 @@ import Error from './Components/Error';
 import { CheckOut } from "../src/Components/CheckOut/CheckOut.jsx";
 import Cart from './Components/Cart/Cart';
 import Contacto from './Components/Contacto/Contacto.jsx';
+import Loader from './Components/Loader.jsx';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <NavBar />
           <Bienvenida />
           <FondoHome />
+          <Loader />
           <Routes>
             <Route path={"/"} element={<ItemListContainer />} />
             <Route path={"/category/:id"} element={<ItemListContainer />} />

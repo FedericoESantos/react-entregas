@@ -255,3 +255,14 @@ ul div{
 .enviar{
   padding: .3125rem;margin: .625rem;
 }
+.cargando{
+  display: flex;
+  padding: .625rem;
+  justify-content: center;
+}
+.cargando img{
+  height: 3.125rem;
+}
+.cargando .flash{
+  height: 5rem;
+}
