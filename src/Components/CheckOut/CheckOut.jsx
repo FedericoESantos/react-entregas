@@ -82,45 +82,48 @@ export const CheckOut = () => {
 
     };
     return (
-        <div>
+        <div className="formulario">
             <img src="../../../public/images/logo.png" alt="logo" />
             <h2> Complete el formulario para confirmar su compra... </h2>
             <form onSubmit={manejadorFormulario}>
 
                 {cart.map((prod) => (
-                    <div key={prod.id}>
-                        <p>{''} {prod.title} {prod.quantity}</p>
-                        <p>{prod.price}</p>
+                    <div key={prod.id} className="item-cart">
+                        <img src={prod.img} alt={prod.title} />
+                        <p>{''} {prod.title}</p>
+                        <p>Cantidad: {prod.quantity}</p>
+                        <p>Precio u.: $ {prod.price}</p>
+                        <p>Precio Total.: $ {prod.price * prod.quantity}</p>
                     </div>
                 ))}
 
-                <div>
-                    <label className="lab-check">Nombre:</label>
-                    <input className="input-check" type="text" value={nombre} onChange={(e) => setNombre(e.target.value)}
+                <div className="info">
+                    <label className="lab-check"> Nombre:</label>
+                    <input className="input-check" placeholder="complete su nombre"  type="text" value={nombre} onChange={(e) => setNombre(e.target.value)}
                     />
                 </div>
 
-                <div>
-                    <label className="lab-check">Apellido:</label>
-                    <input className="input-check" type="text" value={apellido} onChange={(e) => setApellido(e.target.value)}
+                <div className="info">
+                    <label className="lab-check"> Apellido:</label>
+                    <input className="input-check" placeholder="complete su apellido" type="text" value={apellido} onChange={(e) => setApellido(e.target.value)}
                     />
                 </div>
 
-                <div>
-                    <label className="lab-check">Telefono:</label>
-                    <input className="input-check" type="number" value={telefono} onChange={(e) => setTelefono(e.target.value)}
+                <div className="info">
+                    <label className="lab-check"> Telefono:</label>
+                    <input className="input-check" placeholder="complete su telefono" type="number" value={telefono} onChange={(e) => setTelefono(e.target.value)}
                     />
                 </div>
 
-                <div>
-                    <label className="lab-check">Email:</label>
-                    <input className="input-check" type="email" value={email} onChange={(e) => setEmail(e.target.value)}
+                <div className="info">
+                    <label className="lab-check"> Email:</label>
+                    <input className="input-check" placeholder="complete su email" type="email" value={email} onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
 
-                <div>
-                    <label className="lab-check">Confirmar email</label>
-                    <input className="input-check" type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)}
+                <div className="info">
+                    <label className="lab-check"> Confirmar email</label>
+                    <input className="input-check" placeholder="repita su email" type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)}
                     />
                 </div>
 
@@ -130,7 +133,7 @@ export const CheckOut = () => {
                     <p> ¡Gracias por tu compra ! Tu numero de seguimiento es: <br /> {''} {ordenId} {''} <br /></p>
                 )}
                 <div>
-                    <button type="submit"> Enviar </button>
+                    <button className="enviar" type="submit"> Enviar </button>
                 </div>
             </form>
         </div>

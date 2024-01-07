@@ -181,6 +181,9 @@ ul div{
 }
 .carrito{
   display: flex;
+  gap: 2.1875rem;
+  margin: 1.25rem;
+  height: 21.875rem;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 217, 0, 0.705);
@@ -199,7 +202,7 @@ ul div{
   padding: 1.25rem;
 }
 .contacto {
-  background-color: rgba(255, 255, 255, 0.781);
+  background-color: rgba(165, 13, 38, 0.781);
   border-radius: 1.25rem;
   margin: 1.25rem;
   text-align: center;
@@ -214,4 +217,41 @@ ul div{
 }
 .contacto figure img{
   height: 11.25rem;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1.25rem;
+  background-color: rgba(223, 123, 2, 0.671);
+  text-align: center;
+}
+.formulario img{
+  margin-top: .625rem;
+  height: 4.375rem;
+  width: 5rem;
+  align-self: center;
+}
+.formulario h2{
+  padding: 1.25rem;
+}
+.formulario form div label{
+  padding: 1.25rem;
+}
+.carrito p{
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: red;
+  padding-bottom: .625rem;
+}
+.item-cart{
+  font-size: 1.125rem;
+  padding: 1.875rem;
+  font-weight: bold;
+}
+.info{
+  padding: .3125rem;
+}
+.enviar{
+  padding: .3125rem;margin: .625rem;
 }
