@@ -46,7 +46,7 @@ export const CheckOut = () => {
         Promise.all(
             orden.items.map(async (productoOrden) => {
                 const db = getFirestore();
-                const productoRef = doc(db, 'products', productoOrden.id);
+                const productoRef = doc(db, 'prod', productoOrden.id);
 
                 const productoDoc = await getDoc(productoRef);
                 const stockActual = productoDoc.data().stock;
@@ -130,7 +130,11 @@ export const CheckOut = () => {
 
                 {error && <p>{error}</p>}
                 {ordenId && (
-                    <p> ¡Gracias por tu compra FLASH! Tu numero de seguimiento es: <br /> {''} {ordenId} {''} <br /></p>
+                    <div className="gracias">
+                        <p> ¡Gracias por tu compra FLASH!</p>
+                        <p>Tu numero de seguimiento es: <br /> {''} {ordenId} {''} <br /></p>
+                    </div>
+                    
                 )}
                 <div>
                     <button className="enviar" type="submit"> Enviar </button>

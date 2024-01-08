@@ -266,3 +266,12 @@ ul div{
 .cargando .flash{
   height: 5rem;
 }
+.gracias{
+  width: auto;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  background-color: azure;
+  border-radius: .5rem;
+  font-weight: bold;
+  font-size: 1.375rem;
+}
