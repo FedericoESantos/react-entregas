@@ -9,9 +9,9 @@ export const useCartContext = () => useContext(CartContext);
 const carritoInit = JSON.parse(localStorage.getItem("cart")) || [];
 
 const CartProvider = ({ children }) => {
-    const [cart, setCart] = useState([carritoInit]); //creamos el hook useState con un array vacio
+    const [cart, setCart] = useState(carritoInit); //creamos el hook useState con un array vacio
+    
     // y a partir de aquí comenzamos a crear funciones
-
     const addProd = (item, quantity) => {
         if (isInCart(item.id)) {
             setCart(
@@ -49,7 +49,7 @@ const CartProvider = ({ children }) => {
         setCart(cart.filter((product) => product.id !== id));
 
     useEffect(() =>{
-        localStorage.setItem("cart", JSON.stringify(cart))
+        localStorage.setItem(".cart", JSON.stringify(cart))
     }, [cart]);
 
     return ( //ESTO ES LA ETAPA 2
