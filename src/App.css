@@ -275,3 +275,22 @@ ul div{
   font-weight: bold;
   font-size: 1.375rem;
 }
+.redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .redes img{
+    height: 4.375rem;
+  }
+  .redes p{
+    font-size: 1.25rem;
+    color: yellow;
+    font-weight: bold;
+  }
+.contacto img{
+  height: 5rem;
+}
+.contacto .logo{
+  height: 6.875rem;
+}
